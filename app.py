@@ -271,4 +271,4 @@ def update_serie(xaxis_column_name):
     return fig
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
