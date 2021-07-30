@@ -205,7 +205,7 @@ def update_graph(xaxis_column_name):
     fig.update_layout(margin={'l': 20, 'b': 10, 't': 10, 'r': 10}, hovermode='closest')
     """
     return fig
-
+"""
 @app.callback(
     dash.dependencies.Output('x-time-series', 'figure'),
     [dash.dependencies.Input('crossfilter-xaxis-column', 'value')]
@@ -269,6 +269,7 @@ def update_serie(xaxis_column_name):
     fig = dict(data=data, layout=layout_individual)
 
     return fig
-
+"""
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)
+    
